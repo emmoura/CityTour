@@ -99,18 +99,18 @@
 }
 .wrapper ul li{
   height: 90%; /*JUST CHANGED THIS FROM 90%*/ /*CHANGES THE PROXIMITY OF THE LETTERING BUT NOT THE WRAPPER*/
-  margin: 10px 0; /*CHANGED FROM 30PX*/ /*MAKES THE LIST START CLOSER TO THE TOP*/
+  margin: 5px 0; /*CHANGED FROM 30PX*/ /*MAKES THE LIST START CLOSER TO THE TOP*/
 }
 .wrapper ul li a{
   text-decoration: none;
   font-size: 30px;
   font-weight: 500;
-  padding: 5px 30px;
+  padding: 5px 5px; /*CHANGED FROM 5PX 30PX*/ /*space around an element's content, inside defined borders*/
   color: #fff;
-  border-radius: 100px; /*CHANGED FROM 100PX*/
+  border-radius: 100px; /*CHANGED FROM 100PX*/ /*rounds corners of wrapper*/
   position: absolute;
   line-height: 50px; /*CHANGED FROM 50PX*/
-  margin: 5px 30px; 
+  margin: 5px 5px; /*CHANGED FROM 5PX 30PX*/ /*space around element, outside defined borders*/
   opacity: 0;
   transition: all 0.3s ease;
   transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -168,14 +168,14 @@ input[type="checkbox"]{
 }
 #active:checked ~ .wrapper ul li a{
 	transform: none;
-	transition-timing-function: ease, cubic-bezier(.5,1.7,.8,1); /*CHANGED FROM (.1,1.3,.3,1)*/
+	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /*CHANGED FROM (.1,1.3,.3,1)*/
    transition-delay: .6s;
   transform: translateX(-100px);
 }
-	
+
 .container{
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background-color: rgba(0,0,0,0.4);
   display: flex;
   align-items: center;
